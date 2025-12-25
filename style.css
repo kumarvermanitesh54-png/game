@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+    background-color: #081b31;
+    cursor: pointer;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+#user-score, 
+#comp-score{
+    font-size: 4rem;
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+/* mobile ke liye */
+@media(max-width:500px){
+h1{
+    height: 2em;
+    line-height: 2em;
+}
+.choice{
+    height: 100px;
+    width: 100px;
+}
+
+img{
+    height: 90px;
+    width: 90px;
+}
+.choices{
+    gap: 1em;
+    margin-top:4em;
+}
+
+.score-board{
+    gap:2em;
+    font-size: 2em;
+    margin-top: 1em;
+}
+#user-score, 
+#comp-score{
+    font-size: 1.5em;
+}
+#msg{
+    font-size:1.3em;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+}
